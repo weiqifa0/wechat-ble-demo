@@ -32,14 +32,15 @@ Page({
           bleAdapterStatus: "初始化失败"
         })
         wx.showModal({
-          showCancel: false,
-          title: '提示',
-          content: '设备蓝牙未打开，请打开蓝牙功能',
-          success: function (res) {
-            if (res.confirm) {
-              //console.log('用户点击确定')
-            }
-          }
+          title: '提示请打开手机蓝牙',//提示文字
+          showCancel:false,
+          confirmText:"好的",
+          duration: 2000,//显示时长
+          mask: true,//是否显示透明蒙层，防止触摸穿透，默认：false  
+          icon: 'success', //图标，支持"success"、"loading"  
+          success: function () { },//接口调用成功
+          fail: function () { },  //接口调用失败的回调函数  
+          complete: function () { } //接口调用结束的回调函数  
         });
       },
       complete:function(){
