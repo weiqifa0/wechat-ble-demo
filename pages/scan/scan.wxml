@@ -12,7 +12,7 @@
   
   <view wx:if="{{!bleConnSuccess}}" class='scan_result' wx:for="{{bleChips}}">
      <text class="result_text">{{index}}-{{item.name}}-{{item.deviceId}}</text>
-     <button bindtap='onConnBle' data-item='{{item}}'>连接</button>
+     <button type='primary' class='btn_con' bindtap='onConnBle' data-item='{{item}}'>连接</button>
   </view>
 
   <view wx:if="{{bleConnSuccess}}" class='notify_result'>

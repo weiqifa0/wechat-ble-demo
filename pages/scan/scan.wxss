@@ -1,9 +1,9 @@
 /* pages/scan/scan.wxss */
 .scan_view{
-  margin: 16px;
+  margin: 14px;
 }
 .result{
-  padding: 16px;
+  padding: 13px;
   direction: flex;
   flex-direction: column;
   background-color: gainsboro;
@@ -17,7 +17,7 @@
   width: 100%;
   height: 20px;
   color: black;
-  font-size: 14px;
+  font-size: 11px;
   display: block;
 }
 
@@ -29,12 +29,22 @@
   color: black;
   font-size: 14px;
   display: block;
-  margin-top: 16px;
+  margin-top: 11px;
 }
+.btn_scan{
+  color: white;
+  font-size: 13px;
+}
+
+.btn_scan{
+  color: white;
+  font-size: 10px;
+}
+
 .scan_result{
   display: flex;
   flex-direction: row;
-  padding: 16px;
+  padding: 11px;
   background-color: gainsboro;
   height: 50px;
   margin-top: 8px;
@@ -50,6 +60,6 @@
 }
 
 .notify_result_data{
-  font-size: 12px;
+  font-size: 11px;
   display: block;
 }
